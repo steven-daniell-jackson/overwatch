@@ -1,0 +1,19 @@
+<div class="row">
+        <div class="col-md-12 text-center">
+            
+          <h2>{{path | uppercase}} Gameplay</h2>
+          <p>A collection of Play of the Games and Highlights from Overwatch</p>
+        
+        </div>
+        
+      </div>
+
+      <hr>
+    
+      <div ng-repeat="entry in entries  | filter:{hero:path}">
+         <div class="col-md-6  pull-left">
+          <youtube-video  class="embed-responsive-item" video-id="entry.videoLink" player-width="'100%'"></youtube-video> 
+      </div>
+      
+      
+     
