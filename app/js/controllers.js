@@ -11,6 +11,7 @@ $scope.path = path.replace("/", "");
 getVideos.all()
 .success(function(data) {
             $scope.entries = data;
+            $scope.entries.reverse()
 
         })
         .error(function(data) {
